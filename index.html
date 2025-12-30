@@ -2,69 +2,156 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Shree Vaibhav Laxmi Enterprises | Construction (Shuttering) Contractor Mumbai</title>
+<title>Shree Vaibhav Laxmi Enterprises | Shuttering Contractor Mumbai</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
-body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f4f8ff;color:#222}
-header{background:#0b4ea2;color:#fff;text-align:center;padding:25px}
-header h1{margin:0;font-size:38px}
-header p{margin-top:8px}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,Helvetica,sans-serif}
+body{background:#f4f8ff;color:#333}
 
-nav{background:#083b7a;text-align:center;padding:12px;position:sticky;top:0}
-nav a{color:#fff;margin:0 15px;text-decoration:none;font-weight:bold}
+/* HEADER */
+header{
+  background:linear-gradient(135deg,#0a4da2,#0f6fdc);
+  color:#fff;
+  padding:50px 20px;
+  text-align:center;
+}
+header h1{font-size:44px}
+header p{font-size:18px;color:#e6ecff;margin-top:8px}
 
-.slider img{width:100%;height:420px;object-fit:cover}
-
-section{padding:55px 10%}
-h2{text-align:center;color:#0b4ea2;margin-bottom:30px}
-
-.box{background:#fff;padding:30px;border-radius:12px;box-shadow:0 5px 15px rgba(0,0,0,.1)}
-
-.services,.projects,.gallery{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px
+/* SLIDER */
+.slider{
+  max-width:1000px;
+  height:450px;
+  margin:50px auto;
+  overflow:hidden;
+  border-radius:15px;
+  box-shadow:0 15px 40px rgba(0,0,0,.2);
+}
+.slides{
+  display:flex;
+  width:100%;
+  height:100%;
+  transition:0.8s;
+}
+.slides img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
 }
 
-.card{
-background:#fff;padding:25px;border-radius:12px;
-box-shadow:0 4px 12px rgba(0,0,0,.1)
+/* COUNTERS */
+.counter-section{
+  background:#fff;
+  padding:60px 20px;
+}
+.counters{
+  max-width:1100px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:30px;
+  text-align:center;
+}
+.counter-box{
+  background:#f4f8ff;
+  padding:30px;
+  border-radius:15px;
+  box-shadow:0 8px 20px rgba(0,0,0,.1);
+}
+.counter{
+  font-size:40px;
+  color:#0a4da2;
+  font-weight:bold;
 }
 
-.gallery img{
-width:100%;
-height:200px;
-object-fit:cover;
-border-radius:10px
+/* SERVICES & PROJECTS */
+.section{
+  padding:80px 20px;
+}
+.section h2{
+  text-align:center;
+  font-size:38px;
+  color:#0a4da2;
+  margin-bottom:40px;
+}
+.grid{
+  max-width:1200px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:30px;
+}
+.box{
+  background:#fff;
+  padding:30px;
+  border-radius:16px;
+  text-align:center;
+  box-shadow:0 12px 30px rgba(0,0,0,.12);
 }
 
-/* Reviews Slider */
-.review{display:none;font-size:18px;background:#fff;
-padding:25px;border-left:6px solid #0b4ea2;
-border-radius:8px;box-shadow:0 4px 10px rgba(0,0,0,.1)}
+/* REVIEWS */
+.reviews{
+  background:#fff;
+  padding:70px 20px;
+}
+.review-box{
+  max-width:800px;
+  margin:auto;
+  background:#f4f8ff;
+  padding:30px;
+  border-radius:15px;
+  text-align:center;
+  box-shadow:0 10px 25px rgba(0,0,0,.1);
+}
+.review{display:none;font-size:18px}
 .review.active{display:block}
 
-input,textarea{
-width:100%;padding:12px;margin:10px 0;
-border-radius:6px;border:1px solid #ccc
+/* CONTACT */
+.contact{
+  background:linear-gradient(135deg,#0a4da2,#0f6fdc);
+  color:#fff;
+  padding:80px 20px;
+}
+.contact form{
+  max-width:600px;
+  margin:auto;
+}
+.contact input,.contact textarea{
+  width:100%;
+  padding:12px;
+  margin-bottom:15px;
+  border:none;
+  border-radius:8px;
+}
+.contact button{
+  background:#25d366;
+  border:none;
+  padding:14px 30px;
+  color:#fff;
+  font-size:18px;
+  border-radius:30px;
+  cursor:pointer;
 }
 
-button{
-background:#0b4ea2;color:#fff;border:none;
-padding:14px 25px;font-size:16px;border-radius:6px
-}
-
+/* MAP */
 .map iframe{
-width:100%;height:350px;border:none;border-radius:12px
+  width:100%;
+  height:400px;
+  border:0;
 }
 
-footer{background:#083b7a;color:#fff;text-align:center;padding:20px}
-
+/* WHATSAPP */
 .whatsapp{
-position:fixed;bottom:20px;right:20px;
-background:#25D366;color:#fff;padding:16px;
-border-radius:50%;font-size:24px;text-decoration:none
+  position:fixed;
+  right:20px;
+  bottom:20px;
+  background:#25d366;
+  color:#fff;
+  padding:15px 20px;
+  border-radius:50px;
+  text-decoration:none;
+  box-shadow:0 10px 25px rgba(0,0,0,.3);
 }
 </style>
 </head>
@@ -72,147 +159,112 @@ border-radius:50%;font-size:24px;text-decoration:none
 <body>
 
 <header>
-<h1>SHREE VAIBHAV LAXMI ENTERPRISES</h1>
-<p>Premium Shuttering & Construction Contractor – Mumbai</p>
+  <h1>Shree Vaibhav Laxmi Enterprises</h1>
+  <p>Trusted Shuttering & Construction Contractor – Ghatkopar, Mumbai</p>
 </header>
 
-<nav>
-<a href="#about">About</a>
-<a href="#services">Services</a>
-<a href="#projects">Projects</a>
-<a href="#reviews">Reviews</a>
-<a href="#contact">Contact</a>
-</nav>
-
-
-<section id="about">
-<h2>About Us</h2>
-<div class="box">
-<b>Shree Vaibhav Laxmi Enterprises</b> is a Trusted Shuttering & Construction Contractor Based in Ghatkopar, Mumbai.
-Led by <b>Mr. Nitin C. Patel(Contractor & Civil Engineer)</b>, We Deliver Strong, Safe and Premium Quality Shuttering Solutions.
+<!-- IMAGE SLIDER -->
+<div class="slider">
+  <div class="slides" id="slides">
+    <img src="https://github.com/user-attachments/assets/944c38f8-b8a5-4f48-b8cd-0c13844d840a?raw=1">
+    <img src="https://github.com/user-attachments/assets/1cf7d82b-50fd-445d-84f9-0c162c8377a5?raw=1">
+    <img src="https://github.com/user-attachments/assets/3308c587-5c2f-4281-9156-2b61418ddb23?raw=1">
+    <img src="https://github.com/user-attachments/assets/c1f44811-16c9-4517-b4c5-103a5714ae12?raw=1">
+  </div>
 </div>
+
+<!-- COUNTERS -->
+<section class="counter-section">
+  <div class="counters">
+    <div class="counter-box"><div class="counter" data-target="12">0</div><p>Years Experience</p></div>
+    <div class="counter-box"><div class="counter" data-target="120">0</div><p>Projects Done</p></div>
+    <div class="counter-box"><div class="counter" data-target="50">0</div><p>Happy Builders</p></div>
+  </div>
 </section>
 
-<section id="services">
-<h2>Our Services</h2>
-<div class="services">
-<div class="card">🏗️ Column </div>
-<div class="card">🏢 Slab </div>
-<div class="card">🧱 Beam & Wall </div>
-<div class="card">⚙️ Construction</div>
-<div class="card">🛠️ Scaffolding Services</div>
-<div class="card">🏠 Residential Construction</div>
-<div class="card">🏬 Commercial Construction</div>
-</div>
+<!-- SERVICES -->
+<section class="section">
+  <h2>Our Services</h2>
+  <div class="grid">
+    <div class="box">🏗️ Column & Slab Shuttering</div>
+    <div class="box">🧱 Beam & Wall Shuttering</div>
+    <div class="box">🏢 Commercial Projects</div>
+    <div class="box">🏠 Residential Buildings</div>
+    <div class="box">⚙️ Quality Shuttering Material</div>
+    <div class="box">🛡️ Safety-Focused Execution</div>
+  </div>
 </section>
 
-<div class="projects">
-<section id="projects">
-<h2>Our Projects</h2>
-
-<div class="projects">
-
-<div class="card">
-<h3>Heights</h3>
-<p>📍 Ghatkopar East, Mumbai<br>🏢 Residential</p>
-</div>
-
-<div class="card">
-<h3> Complex</h3>
-<p>📍 Andheri East, Mumbai<br>🏬 Commercial</p>
-</div>
-
-<div class="card">
-<h3> Residency</h3>
-<p>📍 Powai, Mumbai<br>🏢 Residential</p>
-</div>
-
-<div class="card">
-<h3> Hub</h3>
-<p>📍 Kurla West, Mumbai<br>🏬 Commercial</p>
-</div>
-
-<div class="card">
-<h3>Apartment</h3>
-<p>📍 Vikhroli East, Mumbai<br>🏢 Residential</p>
-</div>
-
-<div class="card">
-<h3> Tower</h3>
-<p>📍 Chembur, Mumbai<br>🏢 Residential</p>
-</div>
-
-<div class="card">
-<h3> Centre</h3>
-<p>📍 BKC, Mumbai<br>🏬 Commercial</p>
-</div>
-
-<div class="card">
-<h3> Estate</h3>
-<p>📍 Navi Mumbai<br>🏭 Industrial</p>
-</div>
-
-<div class="card">
-<h3> Residency</h3>
-<p>📍 Mulund West, Mumbai<br>🏢 Residential</p>
-</div>
-
-<div class="card">
-<h3>Corporate</h3>
-<p>📍 Lower Parel, Mumbai<br>🏬 Commercial</p>
-</div>
-<section>
-
-
-<section id="reviews">
-<h2>Client Reviews(Builder & Developer</h2>
-<div class="review active">⭐⭐⭐⭐⭐ Excellent shuttering quality & finishing.</div>
-<div class="review">⭐⭐⭐⭐⭐ On-time delivery & professional team.</div>
-<div class="review">⭐⭐⭐⭐⭐ Trusted contractor in Mumbai.</div>
-<div class="review">⭐⭐⭐⭐⭐ Strong material & safety focused.</div>
-<div class="review active">⭐⭐⭐⭐⭐ Excellent shuttering quality & finishing.</div>
-<div class="review">⭐⭐⭐⭐⭐ Very strong material and safety focused work.</div>
-<div class="review">⭐⭐⭐⭐⭐ On-time project delivery.</div>
-<div class="review">⭐⭐⭐⭐⭐ Trusted shuttering contractor in Mumbai.</div>
-<div class="review">⭐⭐⭐⭐⭐ Professional team & premium service.</div>
-<div class="review">⭐⭐⭐⭐⭐ Best contractor for large projects.</div>
+<!-- PROJECTS -->
+<section class="section" style="background:#fff;">
+  <h2>Our Projects</h2>
+  <div class="grid">
+    <div class="box">Vaibhav Heights – Ghatkopar</div>
+    <div class="box">Laxmi Commercial Complex – Andheri</div>
+    <div class="box">Shree Ganesh Residency – Powai</div>
+    <div class="box">Patel Business Hub – Kurla</div>
+  </div>
 </section>
 
-<section id="contact">
-<h2>Contact Us</h2>
-<div class="box">
-<p>📍 Ghatkopar, Mumbai</p>
-<p>📞 9167004003</p>
-<p>📧 shreevaibhavlaxmienterprisess@gmail.com</p>
-
-<form action="mailto:shreevaibhavlaxmienterprisess@gmail.com" method="post" enctype="text/plain">
-<input placeholder="Your Name" required>
-<input placeholder="Mobile Number" required>
-<textarea placeholder="Your Requirement"></textarea>
-<button type="submit">Send Inquiry</button>
-</form>
-</div>
+<!-- REVIEWS -->
+<section class="reviews">
+  <h2 style="text-align:center;color:#0a4da2;">Builder Reviews</h2>
+  <div class="review-box">
+    <div class="review active">⭐ Excellent shuttering quality and safety.</div>
+    <div class="review">⭐ On-time delivery and professional team.</div>
+    <div class="review">⭐ Trusted contractor for all our projects.</div>
+  </div>
 </section>
 
+<!-- CONTACT -->
+<section class="contact">
+  <h2 style="text-align:center;">Contact Us</h2>
+  <form action="mailto:shreevaibhavlaxmienterprisess@gmail.com" method="post" enctype="text/plain">
+    <input type="text" name="Name" placeholder="Your Name" required>
+    <input type="email" name="Email" placeholder="Your Email" required>
+    <textarea name="Message" placeholder="Your Message"></textarea>
+    <button type="submit">Send Email</button>
+  </form>
+</section>
+
+<!-- MAP -->
 <section class="map">
-<iframe src="https://maps.google.com/maps?q=Ghatkopar%20Mumbai&z=13&output=embed"></iframe>
+<iframe 
+src="https://www.google.com/maps?q=Ghatkopar,Mumbai&output=embed">
+</iframe>
 </section>
 
-<a class="whatsapp"
-href="https://wa.me/919167004003?text=Hello%20I%20need%20Contruction%20services"
-target="_blank">💬</a>
-
-<footer>
-© 2025 Shree Vaibhav Laxmi Enterprises
-</footer>
+<a class="whatsapp" 
+href="https://wa.me/919167004003?text=Hello%20I%20need%20shuttering%20work"
+target="_blank">💬 WhatsApp</a>
 
 <script>
-let r=document.querySelectorAll(".review");
+/* SLIDER */
 let i=0;
+const slides=document.getElementById("slides");
 setInterval(()=>{
-r[i].classList.remove("active");
-i=(i+1)%r.length;
-r[i].classList.add("active");
+  i=(i+1)%slides.children.length;
+  slides.style.transform=`translateX(-${i*100}%)`;
+},3000);
+
+/* COUNTER */
+document.querySelectorAll('.counter').forEach(c=>{
+  let t=+c.dataset.target,cur=0;
+  let inc=t/100;
+  let run=setInterval(()=>{
+    cur+=inc;
+    c.innerText=Math.ceil(cur)+"+";
+    if(cur>=t){c.innerText=t+"+";clearInterval(run);}
+  },20);
+});
+
+/* REVIEWS */
+let r=0;
+const rev=document.querySelectorAll('.review');
+setInterval(()=>{
+  rev[r].classList.remove('active');
+  r=(r+1)%rev.length;
+  rev[r].classList.add('active');
 },3000);
 </script>
 
